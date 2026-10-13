@@ -26,7 +26,7 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:
 header{background:var(--graphite);color:#F5F5F4}
 .bar{max-width:880px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:#F5F5F4;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-.01em}
-.brand img{width:36px;height:36px}
+.brand img{height:40px;width:auto;display:block}
 nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
 nav a{color:#D6D3D1;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:15px}
 nav a:hover,nav a[aria-current=page]{background:#23262D;color:#fff}
@@ -43,7 +43,7 @@ th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px sol
 tr:last-child td{border-bottom:0}
 th{background:var(--soft);font-weight:700}
 .hero{text-align:center;padding:24px 0 8px}
-.hero img{width:200px;height:200px}
+.hero img{width:320px;max-width:100%;height:auto}
 .hero h1{font-size:46px;margin-top:20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:28px 0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
@@ -63,7 +63,7 @@ footer a{color:var(--muted)}
 </head>
 <body>
 <header><div class="bar">
-<a class="brand" href="/"><img src="/thumbit-mark.png" alt="" width="36" height="36">ThumbiT</a>
+<a class="brand" href="/"><img src="/thumbit-logo-on-dark.png" alt="ThumbiT" width="141" height="40"></a>
 <nav aria-label="Main"><a href="/">Home</a><a href="/support/" aria-current=page>Help</a><a href="/terms/">Passenger Terms</a><a href="/privacy/">Privacy</a></nav>
 </div></header>
 <main>
