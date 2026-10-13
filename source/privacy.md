@@ -4,14 +4,14 @@
 
 ## 1. Who we are
 
-Thumbit is run by **Michael Binmore-May**, trading as Thumbit, a sole trader in the United Kingdom. Michael is the data controller for the personal data Thumbit collects. This means he decides how it is used and is responsible for keeping it safe.
+ThumbiT is run by **Michael Binmore-May**, trading as ThumbiT, a sole trader in the United Kingdom. Michael is the data controller for the personal data ThumbiT collects. This means he decides how it is used and is responsible for keeping it safe.
 
-Thumbit is a booking app. It is **not** a taxi firm. Your journey is provided by an independent, licensed taxi or private hire firm. Thumbit Dispatch, our booking and dispatch system, sends your booking to local firms.
+ThumbiT is a booking app. It is **not** a taxi firm. Your journey is provided by an independent, licensed taxi or private hire firm. ThumbiT Dispatch, our booking and dispatch system, sends your booking to local firms.
 
 - Contact: [support@thumbittaxis.com](mailto:support@thumbittaxis.com)
 - Website: [thumbittaxis.com](https://thumbittaxis.com)
 
-This policy covers the Thumbit app and any Thumbit website. It explains what we collect, why, who we share it with, how long we keep it and your rights under UK data protection law (the UK GDPR and the Data Protection Act 2018).
+This policy covers the ThumbiT app and any ThumbiT website. It explains what we collect, why, who we share it with, how long we keep it and your rights under UK data protection law (the UK GDPR and the Data Protection Act 2018).
 
 ## 2. What we collect and why
 
@@ -41,14 +41,14 @@ We never sell your personal data.
 
 **People you choose.** If you share a trip or turn on trusted contacts, those people get a link showing your trip's progress.
 
-**Service providers** who run parts of Thumbit for us, under written agreements, using your data only on our instructions:
+**Service providers** who run parts of ThumbiT for us, under written agreements, using your data only on our instructions:
 
 | Provider | What they do |
 | --- | --- |
-| Supabase | Hosts Thumbit's database and sign-in |
-| Stripe | Takes card payments; Thumbit never sees your full card number |
+| Supabase | Hosts ThumbiT's database and sign-in |
+| Stripe | Takes card payments; ThumbiT never sees your full card number |
 | Twilio | Sends text messages and sign-in codes |
-| Lovable | Sends booking emails and hosts the Thumbit Dispatch website |
+| Lovable | Sends booking emails and hosts the ThumbiT Dispatch website |
 | Google | Address search, routes and journey times |
 | Apple | Maps on iPhone |
 | postcodes.io (Ideal Postcodes) | Finds the postcode for a map position, to pick the right council tariff |
@@ -59,7 +59,7 @@ We never sell your personal data.
 
 ## 4. No tracking, no advertising data, no cookies
 
-Thumbit does not track you.
+ThumbiT does not track you.
 
 - We do **not** share your data with data brokers.
 - We do **not** link your data with other companies' data for advertising or marketing.
@@ -73,7 +73,7 @@ We will only send you marketing messages if you have agreed to them, and you can
 
 ## 5. Location, payments, storage and security
 
-**Location.** Thumbit only asks for your location while you're using the app. It's used when you tap "use my location" for your pickup, and when you send an Emergency SOS. You can turn it off in your phone's settings and type your address instead.
+**Location.** ThumbiT only asks for your location while you're using the app. It's used when you tap "use my location" for your pickup, and when you send an Emergency SOS. You can turn it off in your phone's settings and type your address instead.
 
 **Payments.** Card payments are handled by Stripe on its secure page. Stripe saves your card so the late-cancellation fee can be taken if it applies, as explained before you pay. We see only the card type, the last 4 digits and whether a payment worked.
 
@@ -105,7 +105,7 @@ Where we rely on your consent, you can withdraw it at any time. Email [support@t
 
 **Deleting your account.** In the app go to **Settings → Delete my account**, or see [how to delete your account](/delete-account/). Your account is erased after 30 days; sign in before then to cancel. Records we must keep by law (section 5) are kept separately.
 
-**Children.** You must be 18 or over to have a Thumbit account. An account holder can book a trip for a child they're responsible for, using a family profile.
+**Children.** You must be 18 or over to have a ThumbiT account. An account holder can book a trip for a child they're responsible for, using a family profile.
 
 **Changes to this policy.** We'll post any changes here with a new date, and tell you in the app or by email if they're important.
 

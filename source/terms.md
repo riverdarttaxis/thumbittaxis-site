@@ -2,19 +2,19 @@
 
 *Last updated: 13 October 2026*
 
-These terms apply when you book a taxi with the Thumbit app. Please read them before you book. By ticking the box on the payment screen you agree to them.
+These terms apply when you book a taxi with the ThumbiT app. Please read them before you book. By ticking the box on the payment screen you agree to them.
 
-## 1. About Thumbit
+## 1. About ThumbiT
 
-Thumbit is run by **Michael Binmore-May**, trading as Thumbit, a sole trader in the United Kingdom ("Thumbit", "we", "us").
+ThumbiT is run by **Michael Binmore-May**, trading as ThumbiT, a sole trader in the United Kingdom ("ThumbiT", "we", "us").
 
-Thumbit is a booking app. It is **not** a taxi firm. When you book, Thumbit Dispatch, our booking and dispatch system, sends your booking to independent, licensed local taxi and private hire firms ("the taxi firm"). The taxi firm that accepts your booking carries out your journey, and **the contract for the journey itself is between you and that taxi firm**. Thumbit is not a party to that contract.
+ThumbiT is a booking app. It is **not** a taxi firm. When you book, ThumbiT Dispatch, our booking and dispatch system, sends your booking to independent, licensed local taxi and private hire firms ("the taxi firm"). The taxi firm that accepts your booking carries out your journey, and **the contract for the journey itself is between you and that taxi firm**. ThumbiT is not a party to that contract.
 
-Every taxi firm on Thumbit must hold the licences and insurance the law requires to carry passengers for hire.
+Every taxi firm on ThumbiT must hold the licences and insurance the law requires to carry passengers for hire.
 
-## 2. Who can use Thumbit
+## 2. Who can use ThumbiT
 
-You must be 18 or over to have a Thumbit account. You can book a trip for someone else, including a child you're responsible for, using a family profile. You must give accurate details and keep your account to yourself.
+You must be 18 or over to have a ThumbiT account. You can book a trip for someone else, including a child you're responsible for, using a family profile. You must give accurate details and keep your account to yourself.
 
 ## 3. Your price
 
@@ -50,7 +50,7 @@ When you pay the booking fee, Stripe saves your card. By ticking the box on the 
 
 We won't use the saved card for anything else without asking you first. If the charge fails, we'll ask you to pay on Stripe's secure page. You can withdraw this permission at any time by emailing us or deleting your account. Fees already owed before then are still due.
 
-Thumbit never sees your full card number. Stripe handles your card details.
+ThumbiT never sees your full card number. Stripe handles your card details.
 
 ## 7. Changing a booking
 

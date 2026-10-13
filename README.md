@@ -1,6 +1,6 @@
 # thumbittaxis.com
 
-The Thumbit website: Home, Help, Passenger Terms, Privacy Policy and Delete your account.
+The ThumbiT website: Home, Help, Passenger Terms, Privacy Policy and Delete your account.
 
 - `docs/` is the published site (GitHub Pages serves this folder).
 - `source/` holds the wording (`privacy.md`, `terms.md`, `faq.json`) and `build.py`.

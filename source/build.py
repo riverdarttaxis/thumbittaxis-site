@@ -1,4 +1,4 @@
-"""Builds the Thumbit website (thumbittaxis.com) into ./site.
+"""Builds the ThumbiT website (thumbittaxis.com) into ./site.
 
 Pages: home, privacy, terms, support (help + contact), delete-account, 404.
 Plain HTML and CSS, no cookies, no scripts, no tracking.
@@ -72,7 +72,7 @@ def page(path, title, body, description):
     links = "".join(
         f'<a href="{href}"{" aria-current=page" if href == path else ""}>{label}</a>' for href, label in NAV
     )
-    full_title = "Thumbit – licensed local taxis, booked in a tap" if path == "/" else f"{title} – Thumbit"
+    full_title = "ThumbiT – licensed local taxis, booked in a tap" if path == "/" else f"{title} – ThumbiT"
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -92,16 +92,16 @@ def page(path, title, body, description):
 </head>
 <body>
 <header><div class="bar">
-<a class="brand" href="/"><img src="/thumbit-mark.png" alt="" width="36" height="36">Thumbit</a>
+<a class="brand" href="/"><img src="/thumbit-mark.png" alt="" width="36" height="36">ThumbiT</a>
 <nav aria-label="Main">{links}</nav>
 </div></header>
 <main>
 {body}
 </main>
 <footer><div class="bar">
-<div>Thumbit is a booking app run by Michael Binmore-May, trading as Thumbit. Journeys are provided by independent, licensed taxi and private hire firms.</div>
+<div>ThumbiT is a booking app run by Michael Binmore-May, trading as ThumbiT. Journeys are provided by independent, licensed taxi and private hire firms.</div>
 <div><a href="mailto:{EMAIL}">{EMAIL}</a> · <a href="/terms/">Passenger Terms</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/delete-account/">Delete your account</a></div>
-<div>© 2026 Thumbit</div>
+<div>© 2026 ThumbiT</div>
 </div></footer>
 </body>
 </html>
@@ -130,11 +130,11 @@ def main():
 
     home = f"""
 <section class="hero">
-<img src="/thumbit-logo.png" alt="Thumbit" width="200" height="200">
-<h1 class="sr">Thumbit</h1>
+<img src="/thumbit-logo.png" alt="ThumbiT" width="200" height="200">
+<h1 class="sr">ThumbiT</h1>
 <p class="lead">Licensed local taxis, booked in a tap.</p>
 <p><a class="cta" href="/support/">How it works</a><a class="cta secondary" href="mailto:{EMAIL}">Contact us</a></p>
-<p><em>The Thumbit app for iPhone is coming soon to the App Store.</em></p>
+<p><em>The ThumbiT app for iPhone is coming soon to the App Store.</em></p>
 </section>
 <div class="cards">
 <div class="card"><h3>Licensed local drivers</h3><p>Every trip is with a licensed local taxi or private hire firm.</p></div>
@@ -143,11 +143,11 @@ def main():
 <div class="card"><h3>Safety built in</h3><p>Track your driver, share your trip and use Emergency SOS.</p></div>
 </div>
 """
-    write("index.html", page("/", "Home", home, "Book licensed local taxis in a tap with the Thumbit app."))
+    write("index.html", page("/", "Home", home, "Book licensed local taxis in a tap with the ThumbiT app."))
 
     for slug, title, desc in [
-        ("privacy", "Privacy Policy", "How Thumbit collects, uses and protects your personal data."),
-        ("terms", "Passenger Terms", "The terms that apply when you book a taxi with Thumbit."),
+        ("privacy", "Privacy Policy", "How ThumbiT collects, uses and protects your personal data."),
+        ("terms", "Passenger Terms", "The terms that apply when you book a taxi with ThumbiT."),
     ]:
         text = open(os.path.join(SRC, f"{slug}.md")).read()
         write(f"{slug}/index.html", page(f"/{slug}/", title, md(text), desc))
@@ -168,14 +168,14 @@ def main():
 <h2>Your account</h2>
 <p><a href="/delete-account/">How to delete your account</a> · <a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Passenger Terms</a></p>
 """
-    write("support/index.html", page("/support/", "Help", support, "Help with the Thumbit taxi booking app, and how to contact us."))
+    write("support/index.html", page("/support/", "Help", support, "Help with the ThumbiT taxi booking app, and how to contact us."))
 
     delete = f"""
 <h1>Delete your account</h1>
-<p class="lead">You can delete your Thumbit account at any time.</p>
+<p class="lead">You can delete your ThumbiT account at any time.</p>
 <h2>In the app</h2>
 <ol>
-<li>Open the Thumbit app and tap <strong>Settings</strong>.</li>
+<li>Open the ThumbiT app and tap <strong>Settings</strong>.</li>
 <li>Tap <strong>Delete my account</strong>.</li>
 <li>Tap <strong>Yes, delete my account</strong> to confirm.</li>
 </ol>
@@ -188,7 +188,7 @@ def main():
 <li>Booking and payment records we must keep by law are kept for 6 years, then deleted. See our <a href="/privacy/">Privacy Policy</a>.</li>
 </ul>
 """
-    write("delete-account/index.html", page("/delete-account/", "Delete your account", delete, "How to delete your Thumbit account and data."))
+    write("delete-account/index.html", page("/delete-account/", "Delete your account", delete, "How to delete your ThumbiT account and data."))
 
     write("404.html", page("/404", "Page not found", '<h1>Page not found</h1><p class="lead">Sorry, that page doesn\'t exist.</p><p><a class="cta" href="/">Go to the home page</a></p>', "Page not found"))
     write("CNAME", f"{DOMAIN}\n")
