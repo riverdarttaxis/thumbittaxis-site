@@ -30,7 +30,7 @@ a:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:
 header{background:var(--graphite);color:#F5F5F4}
 .bar{max-width:880px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:#F5F5F4;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-.01em}
-.brand img{width:36px;height:36px;border-radius:9px}
+.brand img{width:36px;height:36px}
 nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
 nav a{color:#D6D3D1;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:15px}
 nav a:hover,nav a[aria-current=page]{background:#23262D;color:#fff}
@@ -47,7 +47,7 @@ th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px sol
 tr:last-child td{border-bottom:0}
 th{background:var(--soft);font-weight:700}
 .hero{text-align:center;padding:24px 0 8px}
-.hero img{width:112px;height:112px;border-radius:26px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.hero img{width:200px;height:200px}
 .hero h1{font-size:46px;margin-top:20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:28px 0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
@@ -59,6 +59,7 @@ details{background:var(--surface);border:1px solid var(--line);border-radius:12p
 summary{cursor:pointer;font-weight:700}
 details p{margin:10px 0 2px}
 .note{background:var(--soft);border-radius:12px;padding:14px 16px;margin:16px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px}
 footer .bar{flex-direction:column;align-items:flex-start;gap:6px;padding:20px 16px 32px}
 footer a{color:var(--muted)}
@@ -124,13 +125,13 @@ def main():
         shutil.rmtree(OUT)
     os.makedirs(OUT)
 
-    for name in ["favicon.png", "apple-touch-icon.png", "og-image.png", "thumbit-mark.png", "thumbit-icon-192.png"]:
+    for name in ["favicon.png", "apple-touch-icon.png", "og-image.png", "thumbit-mark.png", "thumbit-icon-192.png", "thumbit-logo.png"]:
         shutil.copy(os.path.join(LOGO, name), os.path.join(OUT, name))
 
     home = f"""
 <section class="hero">
-<img src="/thumbit-icon-192.png" alt="Thumbit app icon" width="112" height="112">
-<h1>Thumbit</h1>
+<img src="/thumbit-logo.png" alt="Thumbit" width="200" height="200">
+<h1 class="sr">Thumbit</h1>
 <p class="lead">Licensed local taxis, booked in a tap.</p>
 <p><a class="cta" href="/support/">How it works</a><a class="cta secondary" href="mailto:{EMAIL}">Contact us</a></p>
 <p><em>The Thumbit app for iPhone is coming soon to the App Store.</em></p>
