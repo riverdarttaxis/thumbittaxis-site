@@ -1,7 +1,9 @@
 """Builds the ThumbiT website (thumbittaxis.com) into ./site.
 
-Pages: home, privacy, terms, support (help + contact), delete-account, 404.
-Plain HTML and CSS, no cookies, no scripts, no tracking.
+Pages: home, privacy, terms, support (help + contact), delete-account, app, 404.
+Plain HTML and CSS, no cookies, no tracking. The only script is on /app (the QR code on the drivers'
+window stickers points there): it sends an iPhone to the App Store and an Android phone to Google
+Play, using nothing but the phone's type. No cookies, nothing stored or sent anywhere.
 """
 import html
 import json
@@ -16,6 +18,12 @@ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(SRC, "..", "docs")
 LOGO = SRC  # logo images are kept next to this script
 EMAIL = "support@thumbittaxis.com"
 DOMAIN = "thumbittaxis.com"
+
+# Where /app sends people (the QR code on the window stickers). Fill in each store link once the
+# app is live there; while one is empty, those phones get the website booking page instead.
+APP_STORE_URL = ""  # e.g. "https://apps.apple.com/gb/app/thumbit/id1234567890"
+PLAY_STORE_URL = ""  # "https://play.google.com/store/apps/details?id=com.thumbit.passenger" once live
+BOOK_ONLINE_URL = "https://dispatch.thumbittaxis.com/book"
 
 CSS = """
 :root{--bg:#F8F8F5;--surface:#FFFFFF;--ink:#14213D;--muted:#5B6275;--line:#E4E4DE;
@@ -189,6 +197,30 @@ def main():
 </ul>
 """
     write("delete-account/index.html", page("/delete-account/", "Delete your account", delete, "How to delete your ThumbiT account and data."))
+
+    store_buttons = "".join(
+        f'<a class="cta" href="{html.escape(url)}">{label}</a>'
+        for url, label in [(APP_STORE_URL, "Download on the App Store"), (PLAY_STORE_URL, "Get it on Google Play")]
+        if url
+    )
+    app_page = f"""
+<section class="hero">
+<picture><source srcset="/thumbit-logo-on-dark.png" media="(prefers-color-scheme: dark)"><img src="/thumbit-logo-on-light.png" alt="ThumbiT" width="320" height="91"></picture>
+<h1>Get the ThumbiT app</h1>
+<p class="lead">Licensed local taxis, booked in a tap.</p>
+<p>{store_buttons}<a class="cta{' secondary' if store_buttons else ''}" href="{BOOK_ONLINE_URL}">Book online now</a></p>
+</section>
+<script>
+(function () {{
+  var ua = navigator.userAgent || "";
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && "ontouchend" in document);
+  var android = /Android/.test(ua);
+  var go = ios ? {json.dumps(APP_STORE_URL)} : android ? {json.dumps(PLAY_STORE_URL)} : "";
+  if (go) location.replace(go);
+}})();
+</script>
+"""
+    write("app/index.html", page("/app/", "Get the app", app_page, "Get the ThumbiT taxi app for iPhone or Android, or book online."))
 
     write("404.html", page("/404", "Page not found", '<h1>Page not found</h1><p class="lead">Sorry, that page doesn\'t exist.</p><p><a class="cta" href="/">Go to the home page</a></p>', "Page not found"))
     write("CNAME", f"{DOMAIN}\n")
