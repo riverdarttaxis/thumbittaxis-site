@@ -21,7 +21,7 @@ DOMAIN = "thumbittaxis.com"
 
 # Where /app sends people (the QR code on the window stickers). Fill in each store link once the
 # app is live there; while one is empty, those phones get the website booking page instead.
-APP_STORE_URL = ""  # e.g. "https://apps.apple.com/gb/app/thumbit/id1234567890"
+APP_STORE_URL = "https://apps.apple.com/gb/app/thumbit-taxis/id6822330519"
 PLAY_STORE_URL = ""  # "https://play.google.com/store/apps/details?id=com.thumbit.passenger" once live
 BOOK_ONLINE_URL = "https://dispatch.thumbittaxis.com/book"
 
@@ -142,7 +142,8 @@ def main():
 <h1 class="sr">ThumbiT</h1>
 <p class="lead">Licensed local taxis, booked in a tap.</p>
 <p><a class="cta" href="/support/">How it works</a><a class="cta secondary" href="mailto:{EMAIL}">Contact us</a></p>
-<p><em>The ThumbiT app for iPhone is coming soon to the App Store.</em></p>
+<p><a class="cta" href="{APP_STORE_URL}">Download on the App Store</a></p>
+<p><em>The Android app is coming soon to Google Play.</em></p>
 </section>
 <div class="cards">
 <div class="card"><h3>Licensed local drivers</h3><p>Every trip is with a licensed local taxi or private hire firm.</p></div>

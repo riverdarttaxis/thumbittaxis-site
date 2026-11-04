@@ -72,14 +72,14 @@ footer a{color:var(--muted)}
 <picture><source srcset="/thumbit-logo-on-dark.png" media="(prefers-color-scheme: dark)"><img src="/thumbit-logo-on-light.png" alt="ThumbiT" width="320" height="91"></picture>
 <h1>Get the ThumbiT app</h1>
 <p class="lead">Licensed local taxis, booked in a tap.</p>
-<p><a class="cta" href="https://dispatch.thumbittaxis.com/book">Book online now</a></p>
+<p><a class="cta" href="https://apps.apple.com/gb/app/thumbit-taxis/id6822330519">Download on the App Store</a><a class="cta secondary" href="https://dispatch.thumbittaxis.com/book">Book online now</a></p>
 </section>
 <script>
 (function () {
   var ua = navigator.userAgent || "";
   var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && "ontouchend" in document);
   var android = /Android/.test(ua);
-  var go = ios ? "" : android ? "" : "";
+  var go = ios ? "https://apps.apple.com/gb/app/thumbit-taxis/id6822330519" : android ? "" : "";
   if (go) location.replace(go);
 })();
 </script>
