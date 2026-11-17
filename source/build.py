@@ -250,9 +250,9 @@ def executive_page():
 <section class="wrap" aria-labelledby="know">
 <h2 id="know">What you can count on</h2>
 <div class="assure">
-<div><h3>A fixed price</h3><p>The firm's own price for your journey, shown before you book. It is the price recorded when the journey ends.</p></div>
+<div><h3>A fixed price</h3><p>The firm's own price for your journey, shown before you book. Your booking goes to that firm only, and that price is what is recorded when the journey ends.</p></div>
 <div><h3>Licensed firms and drivers</h3><p>Every executive journey is private hire, with a licensed local firm and a licensed driver.</p></div>
-<div><h3>The firm you chose</h3><p>An executive booking is offered only to the firm whose car and price you picked.</p></div>
+<div><h3>A standard taxi if no executive car is free</h3><p>We ask you first, and show you the standard price. Nothing changes unless you say yes.</p></div>
 <div><h3>Electric or hybrid, if you prefer</h3><p>On any booking you can say you'd prefer an electric or hybrid car. One is sent when it's free.</p></div>
 </div>
 <p class="small">A £1.50 booking fee is paid in the app. Your fare is paid to the driver unless the app says otherwise.</p>
