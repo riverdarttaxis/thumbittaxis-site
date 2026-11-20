@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Get the app – ThumbiT</title>
-<meta name="description" content="Get the ThumbiT taxi app for iPhone or Android, or book online.">
+<meta name="description" content="Get the ThumbiT taxi app for iPhone, or use the web app on Android and any browser.">
 <meta name="theme-color" content="#0C0D10">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:title" content="Get the app – ThumbiT">
-<meta property="og:description" content="Get the ThumbiT taxi app for iPhone or Android, or book online.">
+<meta property="og:description" content="Get the ThumbiT taxi app for iPhone, or use the web app on Android and any browser.">
 <meta property="og:image" content="https://thumbittaxis.com/og-image.png">
 <meta property="og:url" content="https://thumbittaxis.com/app/">
 <link rel="canonical" href="https://thumbittaxis.com/app/">
@@ -72,14 +72,17 @@ footer a{color:var(--muted)}
 <picture><source srcset="/thumbit-logo-on-dark.png" media="(prefers-color-scheme: dark)"><img src="/thumbit-logo-on-light.png" alt="ThumbiT" width="320" height="91"></picture>
 <h1>Get the ThumbiT app</h1>
 <p class="lead">Licensed local taxis, booked in a tap.</p>
-<p><a class="cta" href="https://apps.apple.com/gb/app/thumbit-taxis/id6822330519">Download on the App Store</a><a class="cta secondary" href="https://dispatch.thumbittaxis.com/book">Book online now</a></p>
+<p><a class="cta" href="https://apps.apple.com/gb/app/thumbit-taxis/id6822330519">Download on the App Store</a><a class="cta secondary" href="https://app.thumbittaxis.com/">Open the web app</a></p>
+<p class="lead">On Android? The web app works in your browser, with nothing to install.</p>
 </section>
 <script>
 (function () {
   var ua = navigator.userAgent || "";
   var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && "ontouchend" in document);
   var android = /Android/.test(ua);
-  var go = ios ? "https://apps.apple.com/gb/app/thumbit-taxis/id6822330519" : android ? "" : "";
+  // iPhone and iPad: the App Store. Android: the web app (there is no Play Store app yet).
+  // A computer stays here and chooses.
+  var go = ios ? "https://apps.apple.com/gb/app/thumbit-taxis/id6822330519" : android ? "https://app.thumbittaxis.com/" : "";
   if (go) location.replace(go);
 })();
 </script>
